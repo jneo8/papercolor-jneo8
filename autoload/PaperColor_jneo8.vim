@@ -4,12 +4,13 @@ fun! PaperColor_jneo8#register()
         \   'source' : 'http://github.com/jneo8/papercolor-jneo8',
         \   'description' : 'Ccustomized color theme for PaperColor',
         \   'options' : {
-        \       'allow_bold': 1
+        \       'allow_bold': 1,
+        \       'transparent_background': 1
         \    }
         \ }
   let g:PaperColor_jneo8.dark = {
         \ 'palette': {
-        \     'color00' : ['#eeeeee', '255'],
+        \     'color00' : ['#000000', '0'],
         \     'color01' : ['#af0000', '124'],
         \     'color02' : ['#008700', '28'],
         \     'color03' : ['#5f8700', '64'],
@@ -17,7 +18,7 @@ fun! PaperColor_jneo8#register()
         \     'color05' : ['#878787', '102'],
         \     'color06' : ['#005f87', '24'],
         \     'color07' : ['#444444', '238'],
-        \     'color08' : ['#bcbcbc', '250'],
+        \     'color08' : ['#ffffff', '15'],
         \     'color09' : ['#d70000', '160'],
         \     'color10' : ['#d70087', '162'],
         \     'color11' : ['#8700af', '91'],
