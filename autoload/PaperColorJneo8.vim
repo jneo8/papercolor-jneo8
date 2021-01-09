@@ -4,39 +4,40 @@ fun! PaperColor_jneo8#register()
         \   'source' : 'http://github.com/jneo8/papercolor-jneo8',
         \   'description' : 'Ccustomized color theme for PaperColor',
         \   'options' : {
-        \       'allow_bold': 1
+        \       'allow_bold': 1,
+        \       'transparent_background': 1
         \    }
         \ }
   let g:PaperColor_jneo8.dark = {
         \ 'palette': {
-        \     'color00' : ['#eeeeee', '255'],
-        \     'color01' : ['#af0000', '124'],
-        \     'color02' : ['#008700', '28'],
-        \     'color03' : ['#5f8700', '64'],
-        \     'color04' : ['#0087af', '31'],
-        \     'color05' : ['#878787', '102'],
-        \     'color06' : ['#005f87', '24'],
-        \     'color07' : ['#444444', '238'],
-        \     'color08' : ['#bcbcbc', '250'],
-        \     'color09' : ['#d70000', '160'],
-        \     'color10' : ['#d70087', '162'],
-        \     'color11' : ['#8700af', '91'],
-        \     'color12' : ['#d75f00', '166'],
-        \     'color13' : ['#d75f00', '166'],
-        \     'color14' : ['#005faf', '25'],
-        \     'color15' : ['#005f87', '24'],
-        \     'color16' : ['#0087af', '31'],
-        \     'color17' : ['#008700', '28'],
-        \     'cursor_fg' : ['#eeeeee', '255'],
-        \     'cursor_bg' : ['#005f87', '24'],
-        \     'cursorline' : ['#e4e4e4', '254'],
-        \     'cursorcolumn' : ['#e4e4e4', '254'],
-        \     'cursorlinenr_fg' : ['#af5f00', '130'],
-        \     'cursorlinenr_bg' : ['#eeeeee', '255'],
+        \     'color00' : ['#000000', ''],
+        \     'color01' : ['#ff0000', ''],
+        \     'color02' : ['#008700', ''],
+        \     'color03' : ['#ffaf5f', ''],
+        \     'color04' : ['#000000', ''],
+        \     'color05' : ['#d75f00', ''],
+        \     'color06' : ['#afaf5f', ''],
+        \     'color07' : ['#ffffff', ''],
+        \     'color08' : ['#000000', ''],
+        \     'color09' : ['#d7875f', ''],
+        \     'color10' : ['#5fafd7', ''],
+        \     'color11' : ['#af5f87', ''],
+        \     'color12' : ['#af5f87', ''],
+        \     'color13' : ['#5f8787', ''],
+        \     'color14' : ['#5fafd7', ''],
+        \     'color15' : ['#005f87', ''],
+        \     'color16' : ['#d7d75f', ''],
+        \     'color17' : ['#5faf87', ''],
+        \     'cursor_fg' : ['#000000', ''],
+        \     'cursor_bg' : ['#ffffff', ''],
+        \     'cursorline' : ['#d75f87', ''],
+        \     'cursorcolumn' : ['#303030', ''],
+        \     'cursorlinenr_fg' : ['#ffffff', ''],
+        \     'cursorlinenr_bg' : ['#d75f87', ''],
         \     'popupmenu_fg' : ['#444444', '238'],
         \     'popupmenu_bg' : ['#d0d0d0', '252'],
-        \     'search_fg' : ['#444444', '238'],
-        \     'search_bg' : ['#ffff5f', '227'],
+        \     'search_fg' : ['#444444', ''],
+        \     'search_bg' : ['#ffd700', ''],
         \     'linenumber_fg' : ['#b2b2b2', '249'],
         \     'linenumber_bg' : ['#eeeeee', '255'],
         \     'vertsplit_fg' : ['#005f87', '24'],
@@ -83,4 +84,7 @@ fun! PaperColor_jneo8#register()
         \     'buftabline_inactive_bg': ['#0087af', '31']
         \   }
         \ }
+        highlight SignColumn  guibg=NONE ctermbg=NONE gui=NONE
+        set cursorline
+        highlight CursorLine cterm=NONE guibg=darkblue ctermfg=white
 endfun
